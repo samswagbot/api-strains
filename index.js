@@ -13,11 +13,11 @@ const strainRoutes = require("./routes/strain");
 // Database
 connection();
 
-const Strain = require("./models/strain");
-
 // middleware
 app.use(express.json());
 app.use(cors());
+
+
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/strains", strainRoutes);
