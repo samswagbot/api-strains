@@ -15,7 +15,15 @@ connection();
 
 // middleware
 app.use(express.json());
-app.use(cors());
+
+app.use(
+  cors({
+    origin: [
+      "https://sams-cannabis-store.netlify.app/",
+      "http://localhost:3000/",
+    ],
+  })
+);
 
 
 app.use("/api/users", userRoutes);
