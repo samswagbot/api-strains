@@ -4,7 +4,7 @@ module.exports = () => {
   const connectionParams = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    dbName: process.env.dbName,
+    dbName: 'cannabis',
   };
 
   try {
