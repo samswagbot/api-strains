@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 
-app.use("/api/users", userRoutegit s);
+app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/strains", strainRoutes);
 
